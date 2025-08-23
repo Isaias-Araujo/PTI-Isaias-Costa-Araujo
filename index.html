@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitoria Dantas - Consultoria Financeira</title>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #fff; transition: all 0.3s ease;}
+        header {background: #004d40; color: #fff; padding: 60px 20px; text-align: center;}
+        header h1 {font-size: 2.5rem; margin-bottom: 10px;}
+        header p {font-size: 1.2rem; margin-bottom: 20px;}
+        header a {background: #ffca28; color: #000; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; display: inline-block; margin: 5px;}
+        section {padding: 50px 20px; max-width: 1100px; margin: auto;}
+        section h2 {text-align: center; margin-bottom: 30px; color: #004d40;}
+        .sobre, .beneficios, .servicos, .depoimentos {display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;}
+        .card {flex: 1 1 250px; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: background 0.3s, color 0.3s; text-align: center;}
+        .card h3 {margin-bottom: 10px; color: #00796b;}
+        .card img {width: 150px; border-radius: 50%; margin-bottom: 15px;}
+        .formulario {background: #eeeeee; padding: 30px; border-radius: 10px;}
+        form {display: flex; flex-direction: column; gap: 15px;}
+        input, textarea {padding: 12px; border: 1px solid #ccc; border-radius: 5px;}
+        button {padding: 12px; background: #004d40; color: #fff; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer;}
+        button:hover {background: #00695c;}
+        footer {background: #004d40; color: #fff; text-align: center; padding: 15px;}
+        footer a {color: #25d366; font-weight: bold; text-decoration: none;}
+        .dark-mode {background: #121212; color: #e0e0e0;}
+        .dark-mode header {background: #1b1b1b;}
+        .dark-mode section h2 {color: #ffca28;}
+        .dark-mode .card {background: #1e1e1e; color: #e0e0e0;}
+        .dark-mode .formulario {background: #2c2c2c;}
+        .toggle-btn {position: fixed; top: 20px; right: 20px; padding: 10px 15px; background: #ffca28; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;}
+        @media(max-width: 768px){
+            header h1 {font-size: 2rem;}
+            .sobre, .beneficios, .servicos, .depoimentos {flex-direction: column; align-items: center;}
+        }
+    </style>
+</head>
+<body>
+
+    <button class="toggle-btn" onclick="document.body.classList.toggle('dark-mode')">🌙 Modo Escuro</button>
+
+    <header>
+        <h1>Vitoria Dantas</h1>
+        <p>Consultoria Financeira - Transformando suas finanças em resultados reais</p>
+        <a href="#contato">✉️ Fale comigo</a>
+        <a href="https://wa.me/5599999999999" target="_blank" style="background:#25d366; color:white;">💬 WhatsApp</a>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre a Profissional</h2>
+        <div class="sobre">
+            <div class="card">
+                <img src="Imagens/Perfil.jpg" alt=" Mulher parda sorridente de negócios, usando um terno formal, com cabelo castanho escuro ondulado.">
+                <p>Sou <strong>Vitoria Dantas</strong>, consultora financeira especializada em planejamento pessoal. Auxilio pessoas a conquistarem saúde financeira, eliminarem dívidas e investirem de forma segura e sustentável, sempre alinhado à sua realidade e aos seus objetivos de vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="servicos">
+            <div class="card">
+                <h3>Planejamento Pessoal</h3>
+                <p>Organizar suas finanças é o primeiro passo para conquistar tranquilidade e realizar sonhos. No planejamento pessoal, elaboro uma estratégia financeira sob medida para sua realidade, ajudando a equilibrar receitas e despesas, eliminar dívidas e direcionar recursos para seus objetivos de curto, médio e longo prazo.</p>
+            </div>
+            <div class="card">
+                <h3>Consultoria para Negócios</h3>
+                <p>Estratégias para micro e pequenas empresas crescerem com segurança.</p>
+            </div>
+            <div class="card">
+                <h3>Educação Financeira</h3>
+                <p>Mais do que números, a educação financeira é sobre liberdade de escolhas. Com conteúdos claros e práticos, ensino como lidar com o dinheiro de forma consciente, desenvolver hábitos saudáveis e construir uma relação positiva com suas finanças, permitindo que você tenha controle e segurança em cada decisão.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="beneficios">
+        <h2>Benefícios</h2>
+        <div class="beneficios">
+            <div class="card"><h3>+ Controle</h3><p>Aprenda a organizar seu orçamento e manter suas contas em dia.</p></div>
+            <div class="card"><h3>+ Segurança</h3><p>Estratégias para investir com tranquilidade e reduzir riscos.</p></div>
+            <div class="card"><h3>+ Rentabilidade</h3><p>Melhore o retorno sobre seus recursos com planejamento inteligente.</p></div>
+            <div class="card"><h3>+ Personalização</h3><p>Atendimento adaptado às suas necessidades e objetivos.</p></div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <h2>O que dizem os clientes</h2>
+        <div class="depoimentos">
+            <div class="card"><p>“A Vitoria Dantas me ajudou a sair das dívidas e hoje consigo guardar dinheiro todo mês.” – <strong>Ana Souza</strong></p></div>
+            <div class="card"><p>“Graças à consultoria, minha empresa passou a lucrar mais e gastar menos.” – <strong>João Ferreira</strong></p></div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <div class="formulario">
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p style="margin-top:15px; text-align:center;">
+                Ou fale diretamente no <a href="https://wa.me/5599999999999" target="_blank">💬 WhatsApp</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vitoria Dantas - Consultoria Financeira. Todos os direitos reservados.</p>
+        <p><a href="https://wa.me/5599999999999" target="_blank">📱 WhatsApp</a></p>
+    </footer>
+
+</body>
+</html>
